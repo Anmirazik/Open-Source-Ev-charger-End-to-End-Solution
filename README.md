@@ -1,14 +1,11 @@
 ![shutterstock_1864450102-scaled](https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/5fd4a4ee-98e4-40c5-8212-6c9550766597)
 
-
 # EV-Charger End to End Solutions
-
 So you might be wondering how can I create end-to-end EV Charging Software using open source.
 
 Good for us, there are genius developers out there who have published their solutions on Github, we just need to find and use it only. However, in this article, I will focus on integrating Everest Software In The Loop with Open E Mobility Backend and FrontEnd 
 
 ## What do you need? 
-
 ### Everest 
 1. You can refer to the Everest documentation on how to install Everest [here ](https://everest.github.io/nightly/)
 
@@ -17,24 +14,14 @@ Good for us, there are genius developers out there who have published their solu
 2. You can refer how to install Open E-Mobility FrontEnd Server [here](https://github.com/sap-labs-france/ev-dashboard)
 
 ## What you need to configure at Open E - Mobility
-
 Click ONBOARD NEW STATION and create Charging Station Registration Tokens and then copy the JSON token like this
-
 <img width="1278" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/858cc466-6462-4d01-a07f-ac322e236522">
-
-
 The output should look something like this 
 ~~~
 /OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383
 ~~~
-
-
-
 ## What you need to configure at Everest 
-
-First of all SSH into your Linux system , as for me, I use Ubuntu 22.04 and then change directory into everest-core
-
-As for me once I log in I need to run this 
+First of all SSH into your Linux system, as for me, I use Ubuntu 22.04 and then change the directory into everest-core, As for me once I log in I need to run this 
 ~~~
 sudo nano ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP/ocpp.json
 ~~~
@@ -108,7 +95,6 @@ sudo nano ~/checkout/everest-workspace/everest-core/config/config-sil-ocpp.yaml
 ~~~
 
 and then changed your ChargePointConfigPath
-
 as for me, I changed my ChargePointConfigPath name is "ocpp.json" but yours might be different , it depends on you what you want to name it 
 ~~~
 ChargePointConfigPath: ocpp.json
@@ -127,7 +113,6 @@ sh run-sil-ocpp.sh
 ~~~
 
 ## What will happen after you run Everest
-
 Charger should pop up on your dashboard like this 
 
 <img width="1275" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/fe457ce6-4282-4e72-b2dc-379bbbd8421c">
