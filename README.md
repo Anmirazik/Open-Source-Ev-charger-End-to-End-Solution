@@ -151,8 +151,14 @@ like this
 
 <img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/30640572-a12e-4650-bb1b-44a72bf8d2f8">
 
-
 If you don't add the RFID tags on Open E-Mobility then the RFID tags will be rejected by the charger, this is because we don't want unregistered RFID tags to authorized for any sessions :)
+
+After the sessions is authorized, the charging session should start and you will see the data displayed like this 
+
+<img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/2bd82f16-1167-4a87-ba70-5f53fe45c5ea">
+
+Now you have an End to End EV charging solution with only Open Source ! COngratulations
+
 
 
 
