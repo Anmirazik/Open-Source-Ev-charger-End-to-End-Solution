@@ -129,6 +129,16 @@ and then run the SIL using
 sh run-sil-ocpp.sh
 ~~~
 
+After this Charger should pop up on your dashboard like this 
+
+<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/6bb75b23-f6b0-48cb-bb9c-fce3d1474a17">
+
+You need to configure your charger , mine looks like this 
+
+<img width="725" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/8115ffe1-79f9-4160-9de2-5d95064ad301">
+
+
+
 
 
 
