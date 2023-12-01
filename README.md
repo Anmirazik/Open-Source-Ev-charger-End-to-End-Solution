@@ -22,8 +22,7 @@ First of all SSH into your Linux system , as for me, I use Ubuntu 22.04 and then
 
 As for me once I log in I need to run this 
 ~~~
-cd ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP
-sudo nano ocpp.json
+sudo nano ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP/ocpp.json
 ~~~
 my "ocpp.json" contents looks like this 
 ~~~
