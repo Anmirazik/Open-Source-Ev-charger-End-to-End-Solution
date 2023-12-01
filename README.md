@@ -128,8 +128,7 @@ sh run-sil-ocpp.sh
 
 After this Charger should pop up on your dashboard like this 
 
-<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/6680a5e6-39bc-45c8-9b64-547e4eec365b">
-
+<img width="1275" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/fe457ce6-4282-4e72-b2dc-379bbbd8421c">
 
 You need to configure your charger , mine looks like this 
 
@@ -157,7 +156,7 @@ After the sessions is authorized, the charging session should start and you will
 
 <img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/2bd82f16-1167-4a87-ba70-5f53fe45c5ea">
 
-Now you have an End to End EV charging solution with only Open Source ! COngratulations
+Now you have an End to End EV charging solution with only Open Source ! Congratulations
 
 
 
