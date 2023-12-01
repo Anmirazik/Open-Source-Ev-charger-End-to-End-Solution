@@ -137,6 +137,17 @@ You need to configure your charger , mine looks like this
 
 <img width="725" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/8115ffe1-79f9-4160-9de2-5d95064ad301">
 
+This is My Node-Red dashboard for the Everest SIL
+
+<img width="613" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/6b5b8abe-704a-4db5-9f33-be259df30d71">
+
+and then plug in the charger and then you will see on Open E-Mobility dashboard shows preparing status in yellow color like this 
+
+<img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/f3c83cd4-fb5e-4f3d-a924-4933e7fb9839">
+
+
+
+
 
 
 
