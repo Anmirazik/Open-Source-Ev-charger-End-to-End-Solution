@@ -145,6 +145,18 @@ and then plug in the charger and then you will see on Open E-Mobility dashboard 
 
 <img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/f3c83cd4-fb5e-4f3d-a924-4933e7fb9839">
 
+You need to add the RFID tags in the Open E-Mobility
+
+<img width="211" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/35f1c1e3-c6aa-4192-89b8-b50afe57c17b">
+
+like this 
+
+<img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/a8138d36-5855-4383-97b2-c0eaae6bb956">
+
+If you don't add the RFID tags on Open E-Mobility then the RFID tags will be rejected by the charger, this is because we don't want unregistered RFID tags to authorized for any sessions :)
+
+
+
 
 
 
