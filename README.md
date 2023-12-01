@@ -100,3 +100,18 @@ as for me, I changed my ChargePointConfigPath name is "ocpp.json" but yours migh
 ChargePointConfigPath: ocpp.json
 ~~~
 
+After That run 
+~~~
+cmake ..
+make install
+~~~
+
+and then run the SIL using 
+
+~~~
+sh run-sil-ocpp.sh
+~~~
+
+
+
+
