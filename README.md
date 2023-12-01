@@ -16,6 +16,23 @@ Good for us, there are genius developers out there who have published their solu
 1. You can refer how to install the Open E-Mobility Backend Server [here](https://github.com/sap-labs-france/ev-server)
 2. You can refer how to install Open E-Mobility FrontEnd Server [here](https://github.com/sap-labs-france/ev-dashboard)
 
+## What you need to configure at Open E - Mobility
+
+Click ONBOARD NEW STATION and create Charging Station Registration Tokens
+
+<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/9700ef7e-2f34-4ce0-90de-9c28925e8ed9">
+
+and then copy the JSON token like this
+
+<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/cae831fa-1931-461c-893c-e50876490b23">
+
+The output should look something like this 
+~~~
+/OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383
+~~~
+
+
+
 ## What you need to configure at Everest 
 
 First of all SSH into your Linux system , as for me, I use Ubuntu 22.04 and then change directory into everest-core
