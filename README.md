@@ -1,3 +1,6 @@
+![shutterstock_1864450102-scaled](https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/5fd4a4ee-98e4-40c5-8212-6c9550766597)
+
+
 # EV-Charger End to End Solutions
 
 So you might be wondering how can I create end-to-end EV Charging Software using open source.
