@@ -18,13 +18,10 @@ Good for us, there are genius developers out there who have published their solu
 
 ## What you need to configure at Open E - Mobility
 
-Click ONBOARD NEW STATION and create Charging Station Registration Tokens
+Click ONBOARD NEW STATION and create Charging Station Registration Tokens and then copy the JSON token like this
 
-<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/9700ef7e-2f34-4ce0-90de-9c28925e8ed9">
+<img width="1278" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/858cc466-6462-4d01-a07f-ac322e236522">
 
-and then copy the JSON token like this
-
-<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/cae831fa-1931-461c-893c-e50876490b23">
 
 The output should look something like this 
 ~~~
@@ -131,7 +128,8 @@ sh run-sil-ocpp.sh
 
 After this Charger should pop up on your dashboard like this 
 
-<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/6bb75b23-f6b0-48cb-bb9c-fce3d1474a17">
+<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/6680a5e6-39bc-45c8-9b64-547e4eec365b">
+
 
 You need to configure your charger , mine looks like this 
 
