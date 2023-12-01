@@ -6,20 +6,20 @@ Good for us, there are genius developers out there who have published their solu
 
 ## What do you need? 
 
-Everest 
+### Everest 
 1. You can refer to the Everest documentation on how to install Everest [here ](https://everest.github.io/nightly/)
 
-Open E - Mobility 
+### Open E - Mobility 
 1. You can refer how to install the Open E-Mobility Backend Server [here](https://github.com/sap-labs-france/ev-server)
 2. You can refer how to install Open E-Mobility FrontEnd Server [here](https://github.com/sap-labs-france/ev-dashboard)
 
-What you need to configure at Everest 
+## What you need to configure at Everest 
 
 First of all SSH into your Linux system , as for me, I use Ubuntu 22.04 and then change directory into everest-core
 
 As for me once I log in I need to run this 
 ~~~
-cd everest-workspace/everest-core/build/dist/share/everest/modules/OCPP
+cd ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP
 sudo nano ocpp.json
 ~~~
 my "ocpp.json" contents looks like this 
@@ -88,18 +88,13 @@ my "ocpp.json" contents looks like this
 ~~~
 
 ~~~
-cd everest-workspace/everest-core/
-~~~
-
-and then I use Visual Studio Code server for editing the files in the server where i run this 
-~~~
-code .
+sudo nano ~/checkout/everest-workspace/everest-core/config/config-sil-ocpp.yaml
 ~~~
 
 and then changed your ChargePointConfigPath
 
-as for me, my ChargePointConfigPath name is "ocpp.json" but yours might be different , it depends on you what you want to name it 
+as for me, I changed my ChargePointConfigPath name is "ocpp.json" but yours might be different , it depends on you what you want to name it 
 ~~~
-      ChargePointConfigPath: ocpp.json
+ChargePointConfigPath: ocpp.json
 ~~~
 
