@@ -46,7 +46,7 @@ my "ocpp.json" contents looks like this
 {
     "Internal": {
         "ChargePointId": "Everest-AC-Charger",
-        "CentralSystemURI": "localhost:8001/OCPP16/63c937b82b1ed7174101f323/6569b51a34150fdfdd78cf1f/Everest-AC-Charger",
+        "CentralSystemURI": "localhost:8001/OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383/Everest-AC-Charger",
         "ChargeBoxSerialNumber": "Everest-AC-Charger",
         "ChargePointModel": "Yeti",
         "ChargePointVendor": "Pionix",
