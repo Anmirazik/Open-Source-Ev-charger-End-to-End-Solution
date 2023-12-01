@@ -126,7 +126,9 @@ and then run the SIL using
 sh run-sil-ocpp.sh
 ~~~
 
-After this Charger should pop up on your dashboard like this 
+## What will happen after you run Everest
+
+Charger should pop up on your dashboard like this 
 
 <img width="1275" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/fe457ce6-4282-4e72-b2dc-379bbbd8421c">
 
