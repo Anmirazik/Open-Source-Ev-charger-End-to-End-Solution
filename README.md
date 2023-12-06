@@ -3,17 +3,16 @@
 # EV-Charger End to End Solutions
 So you might be wondering how can you create end-to-end EV Charging Software using open source.
 
-Good for us, there are genius developers out there who have published their solutions on Github, we just need to find and use it only. However, in this article, I will focus on integrating Everest Software In The Loop with Open E Mobility Backend and FrontEnd 
+Good for us, there are genius developers out there who have published their solutions on Github, we just need to find and use it only. However, in this article, I will focus on integrating Everest Software In The Loop with steve Backend
 
 ## What do you need? 
 ### Everest 
 1. You can refer to the Everest documentation on how to install Everest [here ](https://everest.github.io/nightly/)
 
-### Open E - Mobility 
-1. You can refer how to install the Open E-Mobility Backend Server [here](https://github.com/sap-labs-france/ev-server)
-2. You can refer how to install Open E-Mobility FrontEnd Server [here](https://github.com/sap-labs-france/ev-dashboard)
+### Steve
+1. You can refer how to install the steve Backend Server [here](https://github.com/steve-community/steve)
 
-## What you need to configure at Open E - Mobility
+## What you need to configure at steve
 Click ONBOARD NEW STATION and create Charging Station Registration Tokens and then copy the JSON token like this
 <img width="1278" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/858cc466-6462-4d01-a07f-ac322e236522">
 The output should look something like this 
