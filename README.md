@@ -147,273 +147,172 @@ After the sessions is authorized, the charging session should start as below
 
 ![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/d5a56567-c521-46dd-964e-3b378b512dcb)
 
+Below shows the charger transaction logs 
 ~~~
+2023-12-07 12:03:28.485970 [INFO] manager          ::   ________      __                _
+2023-12-07 12:03:28.486127 [INFO] manager          ::  |  ____\ \    / /               | |
+2023-12-07 12:03:28.486156 [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
+2023-12-07 12:03:28.486177 [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
+2023-12-07 12:03:28.486197 [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
+2023-12-07 12:03:28.486217 [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
+2023-12-07 12:03:28.486236 [INFO] manager          ::
+2023-12-07 12:03:28.486253 [INFO] manager          :: Using MQTT broker localhost:1883
+2023-12-07 12:03:28.505165 [INFO] manager          :: Loading config file at: /home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/config/config-sil-ocpp.yaml
+2023-12-07 12:03:29.185574 [INFO] manager          :: - Types loaded in [38ms]
+2023-12-07 12:03:29.185614 [INFO] manager          :: - Types validated [627ms]
+2023-12-07 12:03:29.186846 [INFO] manager          :: - Errors loaded in [1ms]
+2023-12-07 12:03:29.186869 [INFO] manager          :: - Errors validated [0ms]
+2023-12-07 12:03:29.479161 [INFO] manager          :: Config loading completed in 992ms
+2023-12-07 12:03:29.485401 [INFO] everest_ctrl     :: Launching controller service on port 8849
+2023-12-07 12:03:30.730244 [INFO] api:API          :: Module api initialized [1226ms]2023-12-07 12:03:30.736377 [INFO] evse_manager_2:  :: Module evse_manager_2 initialized [1224ms]
 
-2023-12-07 11:58:48.319931 [INFO] manager          ::   ________      __                _
-2023-12-07 11:58:48.320093 [INFO] manager          ::  |  ____\ \    / /               | |
-2023-12-07 11:58:48.320125 [INFO] manager          ::  | |__   \ \  / /__ _ __ ___  ___| |_
-2023-12-07 11:58:48.320147 [INFO] manager          ::  |  __|   \ \/ / _ \ '__/ _ \/ __| __|
-2023-12-07 11:58:48.320168 [INFO] manager          ::  | |____   \  /  __/ | |  __/\__ \ |_
-2023-12-07 11:58:48.320189 [INFO] manager          ::  |______|   \/ \___|_|  \___||___/\__|
-2023-12-07 11:58:48.320209 [INFO] manager          ::
-2023-12-07 11:58:48.320226 [INFO] manager          :: Using MQTT broker localhost:1883
-2023-12-07 11:58:48.339442 [INFO] manager          :: Loading config file at: /home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/config/config-sil-ocpp.yaml
-2023-12-07 11:58:49.013845 [INFO] manager          :: - Types loaded in [39ms]
-2023-12-07 11:58:49.013884 [INFO] manager          :: - Types validated [619ms]
-2023-12-07 11:58:49.015152 [INFO] manager          :: - Errors loaded in [1ms]
-2023-12-07 11:58:49.015175 [INFO] manager          :: - Errors validated [0ms]
-2023-12-07 11:58:49.311434 [INFO] manager          :: Config loading completed in 991ms
-2023-12-07 11:58:49.317507 [INFO] everest_ctrl     :: Launching controller service on port 8849
-2023-12-07 11:58:50.410617 [INFO] auth:Auth        :: Module auth initialized [1072ms]
-2023-12-07 11:58:50.565760 [INFO] energy_manager:  :: Module energy_manager initialized [1222ms]
-2023-12-07 11:58:50.567366 [INFO] grid_connection  :: Module grid_connection_point initialized [1220ms]
-2023-12-07 11:58:50.670580 [INFO] evse_manager_2:  :: Module evse_manager_2 initialized [1325ms]
-2023-12-07 11:58:50.705543 [INFO] api:API          :: Module api initialized [1352ms]
-2023-12-07 11:58:50.753110 [INFO] token_provider_  :: Module token_provider_1 initialized [1283ms]
-2023-12-07 11:58:50.762459 [INFO] evse_security:E  :: Module evse_security initialized [1415ms]
-2023-12-07 11:58:50.767294 [INFO] ocpp:OCPP        :: OCPP config: /home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/build/dist/share/everest/modules/OCPP/config-docker.json
-2023-12-07 11:58:50.767459 [INFO] ocpp:OCPP        :: OCPP user config: /home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/build/dist/share/everest/modules/OCPP/user_config.json
-2023-12-07 11:58:50.768272 [INFO] ocpp:OCPP        :: Augmenting chargepoint config with user_config entries
+2023-12-07 12:03:30.773845 [INFO] auth:Auth        :: Module auth initialized [1268ms]
+2023-12-07 12:03:30.795467 [INFO] grid_connection  :: Module grid_connection_point initialized [1280ms]
+2023-12-07 12:03:30.828788 [INFO] system:System    :: Module system initialized [1215ms]
+2023-12-07 12:03:30.873965 [INFO] energy_manager:  :: Module energy_manager initialized [1362ms]
+2023-12-07 12:03:30.921234 [INFO] evse_security:E  :: Module evse_security initialized [1385ms]
+2023-12-07 12:03:30.927231 [INFO] ocpp:OCPP        :: OCPP config: /home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/build/dist/share/everest/modules/OCPP/config-docker.json
 
-2023-12-07 11:58:50.788823 [INFO] iso15118_charge  :: TCP server on eno1 is listening on port [fe80::84f7:4071:be8d:1cbc%2]:61341
+2023-12-07 12:03:30.927400 [INFO] ocpp:OCPP        :: OCPP user config: /home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/build/dist/share/everest/modules/OCPP/user_config.json
+2023-12-07 12:03:30.927433 [INFO] iso15118_charge  :: TCP server on eno1 is listening on port [fe80::84f7:4071:be8d:1cbc%2]:61341
 
-2023-12-07 11:58:50.789161 [INFO] iso15118_charge  :: TLS server on eno1 is listening on port [fe80::84f7:4071:be8d:1cbc%2]:64109
+2023-12-07 12:03:30.927631 [INFO] iso15118_charge  :: TLS server on eno1 is listening on port [fe80::84f7:4071:be8d:1cbc%2]:64109
 
-2023-12-07 11:58:50.789341 [INFO] iso15118_charge  :: SDP socket setup succeeded
-2023-12-07 11:58:50.789737 [INFO] iso15118_charge  :: Module iso15118_charger initialized [1399ms]
-2023-12-07 11:58:50.798158 [INFO] evse_manager_1:  :: Module evse_manager_1 initialized [1454ms]
-2023-12-07 11:58:50.805982 [INFO] ocpp:OCPP        :: Logging OCPP messages to log file: /tmp/everest_ocpp_logs/2023-12-07T03:58:50.799Z.log
-2023-12-07 11:58:50.806206 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/everest_ocpp_logs/2023-12-07T03:58:50.799Z.html
-2023-12-07 11:58:50.806896 [INFO] ocpp:OCPP        :: Module ocpp initialized [1387ms]
-2023-12-07 11:58:50.810911 [INFO] system:System    :: Module system initialized [1342ms]
-2023-12-07 11:58:51.411190 [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [3097ms] 🚙🚙🚙
-2023-12-07 11:58:51.761656 [INFO] evse_manager_2:  :: Max AC hardware capabilities: 32A/3ph
-2023-12-07 11:58:51.776658 [INFO] evse_manager_1:  :: Max AC hardware capabilities: 32A/3ph
-2023-12-07 11:58:51.893626 [INFO] evse_manager_2:  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
-2023-12-07 11:58:51.898028 [INFO] evse_manager_1:  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
-2023-12-07 11:58:51.948366 [INFO] ocpp:OCPP        :: All EVSE ready. Starting OCPP1.6 service
-2023-12-07 11:58:52.303608 [INFO] ocpp:OCPP        :: Connecting to plain websocket at uri: ws://127.0.0.1:8180/steve/websocket/CentralSystemService/cp001 with profile: 0
-2023-12-07 11:58:52.304489 [INFO] ocpp:OCPP        :: Found 0 charging profile(s) in the database
-2023-12-07 11:58:52.310373 [INFO] ocpp:OCPP        :: OCPP client successfully connected to plain websocket server
-2023-12-07 11:59:02.767901 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:04.019620 [INFO] car_simulator_1  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
-2023-12-07 11:59:04.488285 [INFO] evse_manager_1:  :: SYS  Session logging started.
-2023-12-07 11:59:04.488592 [INFO] evse_manager_1:  :: EVSE IEC Session Started: EVConnected
-2023-12-07 11:59:04.577488 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/everest-logs/2023-12-07T03:59:04.487Z-e393851f-0cee-4284-973e-177f23331489/incomplete-ocpp.html
-2023-12-07 11:59:05.336228 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"DEADBEEF","authorization_type":"RFID","prevalidated":false,"connectors":[1]}
-2023-12-07 11:59:05.366126 [INFO] auth:Auth        :: Received new token: {
+2023-12-07 12:03:30.927708 [INFO] iso15118_charge  :: SDP socket setup succeeded
+2023-12-07 12:03:30.928085 [INFO] iso15118_charge  :: Module iso15118_charger initialized [1330ms]
+2023-12-07 12:03:30.928249 [INFO] ocpp:OCPP        :: Augmenting chargepoint config with user_config entries
+2023-12-07 12:03:30.930640 [INFO] token_provider_  :: Module token_provider_1 initialized [1304ms]
+2023-12-07 12:03:30.958070 [INFO] ocpp:OCPP        :: Logging OCPP messages to log file: /tmp/everest_ocpp_logs/2023-12-07T04:03:30.950Z.log
+2023-12-07 12:03:30.958315 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/everest_ocpp_logs/2023-12-07T04:03:30.950Z.html
+2023-12-07 12:03:30.959045 [INFO] ocpp:OCPP        :: Module ocpp initialized [1346ms]
+2023-12-07 12:03:30.963021 [INFO] evse_manager_1:  :: Module evse_manager_1 initialized [1450ms]
+2023-12-07 12:03:31.508140 [INFO] manager          :: 🚙🚙🚙 All modules are initialized. EVerest up and running [3028ms] 🚙🚙🚙
+2023-12-07 12:03:31.837166 [INFO] evse_manager_2:  :: Max AC hardware capabilities: 32A/3ph
+2023-12-07 12:03:31.892363 [INFO] evse_manager_1:  :: Max AC hardware capabilities: 32A/3ph
+2023-12-07 12:03:32.009273 [INFO] evse_manager_2:  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2023-12-07 12:03:32.013529 [INFO] evse_manager_1:  :: 🌀🌀🌀 Ready to start charging 🌀🌀🌀
+2023-12-07 12:03:32.070139 [INFO] ocpp:OCPP        :: All EVSE ready. Starting OCPP1.6 service
+2023-12-07 12:03:32.445601 [INFO] ocpp:OCPP        :: Connecting to plain websocket at uri: ws://127.0.0.1:8180/steve/websocket/CentralSystemService/cp001 with profile: 0
+2023-12-07 12:03:32.446397 [INFO] ocpp:OCPP        :: Found 0 charging profile(s) in the database
+2023-12-07 12:03:32.454843 [INFO] ocpp:OCPP        :: OCPP client successfully connected to plain websocket server
+2023-12-07 12:03:43.337137 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
+2023-12-07 12:03:44.589858 [INFO] car_simulator_1  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
+2023-12-07 12:03:45.097738 [INFO] evse_manager_1:  :: SYS  Session logging started.
+2023-12-07 12:03:45.098036 [INFO] evse_manager_1:  :: EVSE IEC Session Started: EVConnected
+2023-12-07 12:03:45.142125 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/everest-logs/2023-12-07T04:03:45.097Z-7955151a-b348-4082-9ad3-dabb597e7ce5/incomplete-ocpp.html
+2023-12-07 12:03:47.089085 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"ABC12345","authorization_type":"RFID","prevalidated":false,"connectors":[1]}
+2023-12-07 12:03:47.113994 [INFO] auth:Auth        :: Received new token: {
     "authorization_type": "RFID",
     "connectors": [
         1
-    ],
-    "id_token": "DEADBEEF",
-    "prevalidated": false
-}
-2023-12-07 11:59:05.457291 [INFO] auth:Auth        :: Providing authorization to connector#1
-2023-12-07 11:59:05.541196 [INFO] evse_manager_1:  :: EVSE IEC EIM Authorization received
-2023-12-07 11:59:05.541609 [INFO] evse_manager_1:  :: EVSE IEC Transaction Started (0 kWh)
-2023-12-07 11:59:05.542510 [INFO] evse_manager_1:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
-2023-12-07 11:59:05.578594 [INFO] auth:Auth        :: Result for token: DEADBEEF: ACCEPTED
-2023-12-07 11:59:05.592851 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
-2023-12-07 11:59:05.593403 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (100%)
-2023-12-07 11:59:06.022047 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:06.269650 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:07.520683 [INFO] car_simulator_1  :: {
-  cmd: 'draw_power_regulated',
-  args: [ 16, 3 ],
-  exec: [Function (anonymous)]
-}
-2023-12-07 11:59:07.521162 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 36000 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:07.753139 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedPower
-2023-12-07 11:59:07.769730 [INFO] evse_manager_1:  :: EVSE IEC Charger state: PrepareCharging->Charging
-2023-12-07 11:59:07.835115 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:08.021987 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOn
-2023-12-07 11:59:24.380310 [INFO] car_simulator_1  :: { cmd: 'unplug', args: [], exec: [Function (anonymous)] }
-2023-12-07 11:59:24.808945 [INFO] evse_manager_1:  ::                                     CAR IEC Event BCDtoEF
-2023-12-07 11:59:24.829236 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedStopPower
-2023-12-07 11:59:24.829413 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Charging->Car Paused
-2023-12-07 11:59:24.921547 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:25.043912 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOff
-2023-12-07 11:59:25.044431 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarUnplugged
-2023-12-07 11:59:25.044725 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Car Paused->StoppingCharging
-2023-12-07 11:59:25.045414 [INFO] evse_manager_1:  :: EVSE IEC Set PWM Off
-2023-12-07 11:59:25.145626 [INFO] evse_manager_1:  :: EVSE IEC Charger state: StoppingCharging->Finished
-2023-12-07 11:59:25.146219 [INFO] evse_manager_1:  :: EVSE IEC Transaction Finished: EVDisconnected (0.048 kWh)
-2023-12-07 11:59:25.147096 [INFO] evse_manager_1:  :: EVSE IEC Session Finished
-2023-12-07 11:59:25.147299 [INFO] evse_manager_1:  :: SYS  Session logging stopped.
-2023-12-07 11:59:25.197996 [INFO] ocpp:OCPP        :: Executing unlock connector callback
-2023-12-07 11:59:29.773855 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:31.040020 [INFO] car_simulator_1  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
-2023-12-07 11:59:31.544526 [INFO] evse_manager_1:  :: SYS  Session logging started.
-2023-12-07 11:59:31.544827 [INFO] evse_manager_1:  :: EVSE IEC Session Started: EVConnected
-2023-12-07 11:59:31.594380 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/everest-logs/2023-12-07T03:59:31.544Z-84c082f5-20fd-49a3-b4db-6a653cd3958f/incomplete-ocpp.html
-2023-12-07 11:59:33.100298 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"DEADBEEF","authorization_type":"RFID","prevalidated":false,"connectors":[1]}
-2023-12-07 11:59:33.121071 [INFO] auth:Auth        :: Received new token: {
-    "authorization_type": "RFID",
-    "connectors": [
-        1
-    ],
-    "id_token": "DEADBEEF",
-    "prevalidated": false
-}
-2023-12-07 11:59:33.212373 [INFO] auth:Auth        :: Providing authorization to connector#1
-2023-12-07 11:59:33.298683 [INFO] evse_manager_1:  :: EVSE IEC EIM Authorization received
-2023-12-07 11:59:33.299022 [INFO] evse_manager_1:  :: EVSE IEC Transaction Started (0 kWh)
-2023-12-07 11:59:33.299894 [INFO] evse_manager_1:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
-2023-12-07 11:59:33.333812 [INFO] auth:Auth        :: Result for token: DEADBEEF: ACCEPTED
-2023-12-07 11:59:33.350210 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
-2023-12-07 11:59:33.350728 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (100%)
-2023-12-07 11:59:34.400950 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:34.792764 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:36.043177 [INFO] car_simulator_1  :: {
-  cmd: 'draw_power_regulated',
-  args: [ 16, 3 ],
-  exec: [Function (anonymous)]
-}
-2023-12-07 11:59:36.043466 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 36000 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:36.281843 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedPower
-2023-12-07 11:59:36.325712 [INFO] evse_manager_1:  :: EVSE IEC Charger state: PrepareCharging->Charging
-2023-12-07 11:59:36.475392 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:36.586932 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOn
-2023-12-07 11:59:39.399457 [INFO] car_simulator_1  :: { cmd: 'unplug', args: [], exec: [Function (anonymous)] }
-2023-12-07 11:59:39.826082 [INFO] evse_manager_1:  ::                                     CAR IEC Event BCDtoEF
-2023-12-07 11:59:39.846572 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedStopPower
-2023-12-07 11:59:39.846854 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Charging->Car Paused
-2023-12-07 11:59:39.949000 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:40.121609 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOff
-2023-12-07 11:59:40.122106 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarUnplugged
-2023-12-07 11:59:40.122333 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Car Paused->StoppingCharging
-2023-12-07 11:59:40.122809 [INFO] evse_manager_1:  :: EVSE IEC Set PWM Off
-2023-12-07 11:59:40.233470 [INFO] evse_manager_1:  :: EVSE IEC Charger state: StoppingCharging->Finished
-2023-12-07 11:59:40.234062 [INFO] evse_manager_1:  :: EVSE IEC Transaction Finished: EVDisconnected (0.008 kWh)
-2023-12-07 11:59:40.234989 [INFO] evse_manager_1:  :: EVSE IEC Session Finished
-2023-12-07 11:59:40.235187 [INFO] evse_manager_1:  :: SYS  Session logging stopped.
-2023-12-07 11:59:40.288466 [INFO] ocpp:OCPP        :: Executing unlock connector callback
-2023-12-07 11:59:44.119519 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:45.370810 [INFO] car_simulator_1  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
-2023-12-07 11:59:45.797206 [INFO] evse_manager_1:  :: SYS  Session logging started.
-2023-12-07 11:59:45.797532 [INFO] evse_manager_1:  :: EVSE IEC Session Started: EVConnected
-2023-12-07 11:59:45.848807 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/everest-logs/2023-12-07T03:59:45.796Z-f59e81aa-74f5-42ea-abc7-90b4f99556c5/incomplete-ocpp.html
-2023-12-07 11:59:46.828707 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"DEADBEEF","authorization_type":"RFID","prevalidated":false,"connectors":[1]}
-2023-12-07 11:59:46.859371 [INFO] auth:Auth        :: Received new token: {
-    "authorization_type": "RFID",
-    "connectors": [
-        1
-    ],
-    "id_token": "DEADBEEF",
-    "prevalidated": false
-}
-2023-12-07 11:59:46.940850 [INFO] auth:Auth        :: Providing authorization to connector#1
-2023-12-07 11:59:47.050583 [INFO] evse_manager_1:  :: EVSE IEC EIM Authorization received
-2023-12-07 11:59:47.050928 [INFO] evse_manager_1:  :: EVSE IEC Transaction Started (0 kWh)
-2023-12-07 11:59:47.051781 [INFO] evse_manager_1:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
-2023-12-07 11:59:47.072677 [INFO] auth:Auth        :: Result for token: DEADBEEF: ACCEPTED
-2023-12-07 11:59:47.102076 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
-2023-12-07 11:59:47.102560 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (100%)
-2023-12-07 11:59:47.903882 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:48.120862 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:49.370925 [INFO] car_simulator_1  :: {
-  cmd: 'draw_power_regulated',
-  args: [ 32, 1 ],
-  exec: [Function (anonymous)]
-}
-2023-12-07 11:59:49.371212 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 36000 ], exec: [Function (anonymous)] }
-2023-12-07 11:59:49.553762 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedPower
-2023-12-07 11:59:49.592658 [INFO] evse_manager_1:  :: EVSE IEC Charger state: PrepareCharging->Charging
-2023-12-07 11:59:49.705830 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
-2023-12-07 11:59:49.796921 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOn
-2023-12-07 11:59:52.323652 [INFO] ocpp:OCPP        :: Checking if V2GCertificate has expired
-2023-12-07 11:59:52.390467 [INFO] evse_security:E  :: Requesting certificate expiry: V2G
-2023-12-07 11:59:52.390564 [INFO] evse_security:E  :: Requesting key/pair: V2G
-2023-12-07 11:59:52.397706 [WARN] evse_security:E void evse_security::X509CertificateBundle::add_certifcates(const string&, evse_security::EncodingFormat, const std::optional<std::filesystem::__cxx11::path>&) :: Failed to read single certificate from directory file, ignoring entry!
-2023-12-07 11:59:52.403242 [INFO] evse_security:E  :: Key found for certificate at path: "/home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/build/dist/etc/everest/certs/client/cso/SECC_LEAF.key"
-2023-12-07 11:59:52.451185 [INFO] ocpp:OCPP        :: V2GCertificate is still valid.
-2023-12-07 11:59:52.451295 [INFO] ocpp:OCPP        :: Checking if OCSP cache should be updated
-2023-12-07 11:59:52.451582 [INFO] ocpp:OCPP        :: OCSP Cache is up-to-date enough
-2023-12-07 12:00:00.994582 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 12:00:02.263485 [INFO] car_simulator_2  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
-2023-12-07 12:00:02.859556 [INFO] evse_manager_2:  :: SYS  Session logging started.
-2023-12-07 12:00:02.859879 [INFO] evse_manager_2:  :: EVSE IEC Session Started: EVConnected
-2023-12-07 12:00:02.944353 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/2023-12-07T04:00:02.859Z-cd02e950-4cd3-43f2-b591-bc7b649f0cef/incomplete-ocpp.html
-2023-12-07 12:00:03.181668 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"DEADBEEF","authorization_type":"RFID","prevalidated":false,"connectors":[2]}
-2023-12-07 12:00:03.204228 [INFO] auth:Auth        :: Received new token: {
-    "authorization_type": "RFID",
-    "connectors": [
-        2
-    ],
-    "id_token": "DEADBEEF",
-    "prevalidated": false
-}
-2023-12-07 12:00:03.295686 [INFO] auth:Auth        :: Providing authorization to connector#2
-2023-12-07 12:00:03.411621 [INFO] evse_manager_2:  :: EVSE IEC EIM Authorization received
-2023-12-07 12:00:03.412026 [INFO] evse_manager_2:  :: EVSE IEC Transaction Started (0 kWh)
-2023-12-07 12:00:03.412903 [INFO] evse_manager_2:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
-2023-12-07 12:00:03.427324 [INFO] auth:Auth        :: Result for token: DEADBEEF: ACCEPTED
-2023-12-07 12:00:03.463246 [INFO] evse_manager_2:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
-2023-12-07 12:00:03.463788 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (100%)
-2023-12-07 12:00:03.759066 [INFO] evse_manager_2:  :: EVSE IEC Transaction Finished: DeAuthorized (0 kWh)
-2023-12-07 12:00:03.787698 [INFO] evse_manager_2:  :: EVSE IEC Charger state: PrepareCharging->EVSE Paused
-2023-12-07 12:00:03.788108 [INFO] evse_manager_2:  :: EVSE IEC Set PWM Off
-2023-12-07 12:00:11.679765 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"ABC12345","authorization_type":"RFID","prevalidated":false,"connectors":[2]}
-2023-12-07 12:00:11.709559 [INFO] auth:Auth        :: Received new token: {
-    "authorization_type": "RFID",
-    "connectors": [
-        2
     ],
     "id_token": "ABC12345",
     "prevalidated": false
 }
-2023-12-07 12:00:11.801034 [INFO] auth:Auth        :: Result for token: ABC12345: NO_CONNECTOR_AVAILABLE
-2023-12-07 12:00:17.714257 [INFO] car_simulator_2  :: { cmd: 'unplug', args: [], exec: [Function (anonymous)] }
-2023-12-07 12:00:17.868847 [INFO] evse_manager_2:  ::                                     CAR IEC Event BCDtoEF
-2023-12-07 12:00:17.889140 [INFO] evse_manager_2:  ::                                     CAR IEC Event CarRequestedStopPower
-2023-12-07 12:00:17.889574 [INFO] evse_manager_2:  ::                                     CAR IEC Event CarUnplugged
-2023-12-07 12:00:17.889844 [INFO] evse_manager_2:  :: EVSE IEC Charger state: EVSE Paused->StoppingCharging
-2023-12-07 12:00:17.890397 [INFO] evse_manager_2:  :: EVSE IEC Set PWM Off
-2023-12-07 12:00:17.980725 [INFO] evse_manager_2:  :: EVSE IEC Charger state: StoppingCharging->Finished
-2023-12-07 12:00:17.981050 [INFO] evse_manager_2:  :: EVSE IEC Session Finished
-2023-12-07 12:00:17.981210 [INFO] evse_manager_2:  :: SYS  Session logging stopped.
-2023-12-07 12:00:21.751787 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 12:00:23.030280 [INFO] car_simulator_2  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
-2023-12-07 12:00:23.330363 [INFO] evse_manager_2:  :: SYS  Session logging started.
-2023-12-07 12:00:23.330642 [INFO] evse_manager_2:  :: EVSE IEC Session Started: EVConnected
-2023-12-07 12:00:23.401183 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/2023-12-07T04:00:23.330Z-2826b81b-3179-4954-8ab7-6466b3fb2f30/incomplete-ocpp.html
-2023-12-07 12:00:24.206962 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"ABC12345","authorization_type":"RFID","prevalidated":false,"connectors":[2]}
-2023-12-07 12:00:24.230436 [INFO] auth:Auth        :: Received new token: {
-    "authorization_type": "RFID",
-    "connectors": [
-        2
-    ],
-    "id_token": "ABC12345",
-    "prevalidated": false
-}
-2023-12-07 12:00:24.321814 [INFO] auth:Auth        :: Providing authorization to connector#2
-2023-12-07 12:00:24.433405 [INFO] evse_manager_2:  :: EVSE IEC EIM Authorization received
-2023-12-07 12:00:24.433792 [INFO] evse_manager_2:  :: EVSE IEC Transaction Started (0 kWh)
-2023-12-07 12:00:24.434743 [INFO] evse_manager_2:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
-2023-12-07 12:00:24.453507 [INFO] auth:Auth        :: Result for token: ABC12345: ACCEPTED
-2023-12-07 12:00:24.485133 [INFO] evse_manager_2:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
-2023-12-07 12:00:24.485759 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (100%)
-2023-12-07 12:00:25.767409 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.33333432674408%)
-2023-12-07 12:00:26.073685 [INFO] evse_manager_1:  :: EVSE IEC Soft overcurrent event (L1:31.719103, L2:31.719103, L3:0, limit 22.55), starting timer.
-2023-12-07 12:00:26.074050 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (33.33333432674408%)
-2023-12-07 12:00:26.282817 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
-2023-12-07 12:00:27.533911 [INFO] car_simulator_2  :: {
+2023-12-07 12:03:47.205071 [INFO] auth:Auth        :: Providing authorization to connector#1
+2023-12-07 12:03:47.302677 [INFO] evse_manager_1:  :: EVSE IEC EIM Authorization received
+2023-12-07 12:03:47.303053 [INFO] evse_manager_1:  :: EVSE IEC Transaction Started (0 kWh)
+2023-12-07 12:03:47.303967 [INFO] evse_manager_1:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
+2023-12-07 12:03:47.326457 [INFO] auth:Auth        :: Result for token: ABC12345: ACCEPTED
+2023-12-07 12:03:47.354295 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2023-12-07 12:03:47.354887 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (100%)
+2023-12-07 12:03:47.483831 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
+2023-12-07 12:03:47.841760 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
+2023-12-07 12:03:49.093042 [INFO] car_simulator_1  :: {
   cmd: 'draw_power_regulated',
   args: [ 32, 1 ],
   exec: [Function (anonymous)]
 }
-2023-12-07 12:00:27.534408 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 36000 ], exec: [Function (anonymous)] }
-2023-12-07 12:00:27.619068 [INFO] evse_manager_2:  ::                                     CAR IEC Event CarRequestedPower
-2023-12-07 12:00:27.633505 [INFO] evse_manager_2:  :: EVSE IEC Charger state: PrepareCharging->Charging
-2023-12-07 12:00:27.751839 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.33333432674408%)
-2023-12-07 12:00:27.873178 [INFO] evse_manager_2:  :: EVSE IEC Event PowerOn
-
-
+2023-12-07 12:03:49.093536 [INFO] car_simulator_1  :: { cmd: 'sleep', args: [ 36000 ], exec: [Function (anonymous)] }
+2023-12-07 12:03:49.364709 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedPower
+2023-12-07 12:03:49.408448 [INFO] evse_manager_1:  :: EVSE IEC Charger state: PrepareCharging->Charging
+2023-12-07 12:03:49.527059 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (53.33333611488342%)
+2023-12-07 12:03:49.618210 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOn
+2023-12-07 12:03:50.011657 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
+2023-12-07 12:03:51.262229 [INFO] car_simulator_2  :: { cmd: 'iec_wait_pwr_ready', args: [], exec: [Function (anonymous)] }
+2023-12-07 12:03:51.917415 [INFO] evse_manager_2:  :: SYS  Session logging started.
+2023-12-07 12:03:51.917729 [INFO] evse_manager_2:  :: EVSE IEC Session Started: EVConnected
+2023-12-07 12:03:51.963805 [INFO] ocpp:OCPP        :: Logging OCPP messages to html file: /tmp/2023-12-07T04:03:51.916Z-bb88019e-38cb-4613-ad35-e0f1b92f65f1/incomplete-ocpp.html
+2023-12-07 12:03:53.495706 [INFO] evse_manager_1:  :: EVSE IEC Soft overcurrent event (L1:31.776558, L2:31.776558, L3:0, limit 22.55), starting timer.
+2023-12-07 12:03:54.648088 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (33.33333432674408%)
+2023-12-07 12:03:54.838943 [INFO] token_provider_  :: Publishing new dummy token: {"id_token":"DEADBEEF","authorization_type":"RFID","prevalidated":false,"connectors":[2]}
+2023-12-07 12:03:54.864552 [INFO] auth:Auth        :: Received new token: {
+    "authorization_type": "RFID",
+    "connectors": [
+        2
+    ],
+    "id_token": "DEADBEEF",
+    "prevalidated": false
+}
+2023-12-07 12:03:54.946596 [INFO] auth:Auth        :: Providing authorization to connector#2
+2023-12-07 12:03:55.074159 [INFO] evse_manager_2:  :: EVSE IEC EIM Authorization received
+2023-12-07 12:03:55.074557 [INFO] evse_manager_2:  :: EVSE IEC Transaction Started (0 kWh)
+2023-12-07 12:03:55.075436 [INFO] evse_manager_2:  :: EVSE IEC AC mode, HLC disabled. We are in X1 so we can go directly to nominal PWM.
+2023-12-07 12:03:55.107645 [INFO] auth:Auth        :: Result for token: DEADBEEF: ACCEPTED
+2023-12-07 12:03:55.125773 [INFO] evse_manager_2:  :: EVSE IEC Charger state: Wait for Auth->PrepareCharging
+2023-12-07 12:03:55.126123 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (100%)
+2023-12-07 12:03:55.294671 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.33333432674408%)
+2023-12-07 12:03:55.767664 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 1 ], exec: [Function (anonymous)] }
+2023-12-07 12:03:57.017732 [INFO] car_simulator_2  :: {
+  cmd: 'draw_power_regulated',
+  args: [ 32, 1 ],
+  exec: [Function (anonymous)]
+}
+2023-12-07 12:03:57.018068 [INFO] car_simulator_2  :: { cmd: 'sleep', args: [ 36000 ], exec: [Function (anonymous)] }
+2023-12-07 12:03:57.145801 [INFO] evse_manager_2:  ::                                     CAR IEC Event CarRequestedPower
+2023-12-07 12:03:57.169310 [INFO] evse_manager_2:  :: EVSE IEC Charger state: PrepareCharging->Charging
+2023-12-07 12:03:57.328594 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.33333432674408%)
+2023-12-07 12:03:57.389184 [INFO] evse_manager_2:  :: EVSE IEC Event PowerOn
+2023-12-07 12:04:10.402694 [INFO] evse_manager_1:  :: EVSE IEC Soft overcurrent event (L1:20.036688, L2:20.036688, L3:0, limit 8.8), starting timer.
+2023-12-07 12:04:10.403039 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (12.5%)
+2023-12-07 12:04:10.985741 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (53.33333611488342%)
+2023-12-07 12:04:21.775762 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (24.49999898672104%)
+2023-12-07 12:04:22.312820 [INFO] evse_manager_2:  :: EVSE IEC Soft overcurrent event (L1:32.28976, L2:32.28976, L3:0, limit 28.38), starting timer.
+2023-12-07 12:04:22.313120 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (42.16666519641876%)
+2023-12-07 12:04:27.513445 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (32.83333480358124%)
+2023-12-07 12:04:28.090378 [INFO] evse_manager_2:  :: EVSE IEC Soft overcurrent event (L1:25.181944, L2:25.181944, L3:0, limit 22.88), starting timer.
+2023-12-07 12:04:28.090702 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.83333086967468%)
+2023-12-07 12:04:32.468486 [INFO] ocpp:OCPP        :: Checking if V2GCertificate has expired
+2023-12-07 12:04:32.490065 [INFO] evse_security:E  :: Requesting certificate expiry: V2G
+2023-12-07 12:04:32.490196 [INFO] evse_security:E  :: Requesting key/pair: V2G
+2023-12-07 12:04:32.497553 [WARN] evse_security:E void evse_security::X509CertificateBundle::add_certifcates(const string&, evse_security::EncodingFormat, const std::optional<std::filesystem::__cxx11::path>&) :: Failed to read single certificate from directory file, ignoring entry!
+2023-12-07 12:04:32.503412 [INFO] evse_security:E  :: Key found for certificate at path: "/home/anmirazik/checkout/everest-workspace-no-dirty/everest-core/build/dist/etc/everest/certs/client/cso/SECC_LEAF.key"
+2023-12-07 12:04:32.551351 [INFO] ocpp:OCPP        :: V2GCertificate is still valid.
+2023-12-07 12:04:32.551452 [INFO] ocpp:OCPP        :: Checking if OCSP cache should be updated
+2023-12-07 12:04:32.551726 [INFO] ocpp:OCPP        :: OCSP Cache is up-to-date enough
+2023-12-07 12:04:32.654585 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (33.166664838790894%)
+2023-12-07 12:04:33.230827 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.49999785423279%)
+2023-12-07 12:04:37.776305 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (33.33333432674408%)
+2023-12-07 12:04:38.362670 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (33.33333432674408%)
+2023-12-07 12:04:38.793811 [INFO] car_simulator_1  :: { cmd: 'unplug', args: [], exec: [Function (anonymous)] }
+2023-12-07 12:04:39.194265 [INFO] evse_manager_1:  ::                                     CAR IEC Event BCDtoEF
+2023-12-07 12:04:39.214607 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarRequestedStopPower
+2023-12-07 12:04:39.214908 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Charging->Car Paused
+2023-12-07 12:04:39.326666 [INFO] evse_manager_1:  :: EVSE IEC Set PWM On (33.33333432674408%)
+2023-12-07 12:04:39.448373 [INFO] evse_manager_1:  :: EVSE IEC Event PowerOff
+2023-12-07 12:04:39.448754 [INFO] evse_manager_1:  ::                                     CAR IEC Event CarUnplugged
+2023-12-07 12:04:39.448960 [INFO] evse_manager_1:  :: EVSE IEC Charger state: Car Paused->StoppingCharging
+2023-12-07 12:04:39.449456 [INFO] evse_manager_1:  :: EVSE IEC Set PWM Off
+2023-12-07 12:04:39.559686 [INFO] evse_manager_1:  :: EVSE IEC Charger state: StoppingCharging->Finished
+2023-12-07 12:04:39.560245 [INFO] evse_manager_1:  :: EVSE IEC Transaction Finished: EVDisconnected (0.053 kWh)
+2023-12-07 12:04:39.561104 [INFO] evse_manager_1:  :: EVSE IEC Session Finished
+2023-12-07 12:04:39.561293 [INFO] evse_manager_1:  :: SYS  Session logging stopped.
+2023-12-07 12:04:39.617045 [INFO] ocpp:OCPP        :: Executing unlock connector callback
+2023-12-07 12:04:42.226495 [INFO] car_simulator_2  :: { cmd: 'unplug', args: [], exec: [Function (anonymous)] }
+2023-12-07 12:04:42.627945 [INFO] evse_manager_2:  ::                                     CAR IEC Event BCDtoEF
+2023-12-07 12:04:42.648241 [INFO] evse_manager_2:  ::                                     CAR IEC Event CarRequestedStopPower
+2023-12-07 12:04:42.648494 [INFO] evse_manager_2:  :: EVSE IEC Charger state: Charging->Car Paused
+2023-12-07 12:04:42.810535 [INFO] evse_manager_2:  :: EVSE IEC Set PWM On (53.33333611488342%)
+2023-12-07 12:04:42.942621 [INFO] evse_manager_2:  :: EVSE IEC Event PowerOff
+2023-12-07 12:04:42.943136 [INFO] evse_manager_2:  ::                                     CAR IEC Event CarUnplugged
+2023-12-07 12:04:42.943426 [INFO] evse_manager_2:  :: EVSE IEC Charger state: Car Paused->StoppingCharging
+2023-12-07 12:04:42.944075 [INFO] evse_manager_2:  :: EVSE IEC Set PWM Off
+2023-12-07 12:04:43.053823 [INFO] evse_manager_2:  :: EVSE IEC Charger state: StoppingCharging->Finished
+2023-12-07 12:04:43.054371 [INFO] evse_manager_2:  :: EVSE IEC Transaction Finished: EVDisconnected (0 kWh)
+2023-12-07 12:04:43.055212 [INFO] evse_manager_2:  :: EVSE IEC Session Finished
+2023-12-07 12:04:43.055405 [INFO] evse_manager_2:  :: SYS  Session logging stopped.
+2023-12-07 12:04:43.114566 [INFO] ocpp:OCPP        :: Executing unlock connector callback
 ~~~
-
-
-
 
 Now you have an End to End EV charging solution with only Open Source ! Congratulations
 
