@@ -33,7 +33,7 @@ First of all SSH into your Linux system, as for me, I use Ubuntu 22.04 and then 
 ~~~
 sudo nano ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP/config-docker.json
 ~~~
-my "config-docker.json" contents looks like this 
+my "config-docker.json" contents looks like this , btw this is the default config Everest provide to us
 ~~~
 {
     "Internal": {
