@@ -13,8 +13,9 @@ Good for us, there are genius developers out there who have published their solu
 1. You can refer how to install the steve Backend Server [here](https://github.com/steve-community/steve)
 
 ## What you need to configure at steve
-Click ONBOARD NEW STATION and create Charging Station Registration Tokens and then copy the JSON token like this
-<img width="1278" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/858cc466-6462-4d01-a07f-ac322e236522">
+steve looks like this the first time you access the browser
+![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/75029101-9acc-46c2-868a-97c0280dd109)
+
 The output should look something like this 
 ~~~
 /OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383
