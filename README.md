@@ -103,7 +103,7 @@ sudo nano ~/checkout/everest-workspace/everest-core/config/config-sil-ocpp.yaml
 and then changed your ChargePointConfigPath
 as for me, I changed my ChargePointConfigPath name is "ocpp.json" but yours might be different , it depends on you what you want to name it 
 ~~~
-ChargePointConfigPath: ocpp.json
+ChargePointConfigPath: config-docker.json
 ~~~
 
 After That run 
