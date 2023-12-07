@@ -16,6 +16,14 @@ Good for us, there are genius developers out there who have published their solu
 steve looks like this the first time you access the browser
 ![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/75029101-9acc-46c2-868a-97c0280dd109)
 
+you need to create a charge point bly click on the number of charge point - add new
+
+and it should pop up like this 
+
+please remember to add the ChargeBox ID same as in the Everest configurations , here the default ChargeBox ID is cp001
+
+![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/8922479e-748f-4db8-8b35-43c81486cda8)
+
 The output should look something like this 
 ~~~
 /OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383
