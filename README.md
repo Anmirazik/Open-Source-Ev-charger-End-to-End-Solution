@@ -143,7 +143,7 @@ like this
 
 If you don't add the RFID tags on steve then the RFID tags will be rejected by the charger, this is because we don't want unregistered RFID tags to authorized for any sessions :)
 
-After the sessions is authorized, the charging session should start and you will see the data displayed like this 
+After the sessions is authorized, the charging session should start
 
 Now you have an End to End EV charging solution with only Open Source ! Congratulations
 
