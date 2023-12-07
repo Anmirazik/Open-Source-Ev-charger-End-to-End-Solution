@@ -314,6 +314,429 @@ Below shows the charger transaction logs
 2023-12-07 12:04:43.114566 [INFO] ocpp:OCPP        :: Executing unlock connector callback
 ~~~
 
+Below shows the charger OCPP commands logs
+
+~~~
+2023-12-07T04:03:30.958Z: SYS> Session logging started. 
+
+
+2023-12-07T04:03:32.445Z: SYS> Connecting 
+
+
+2023-12-07T04:03:32.454Z: SYS> Connected 
+
+
+2023-12-07T04:03:32.455Z: ChargePoint>CentralSystem BootNotification 
+[
+  2,
+  "7e348825-d154-4b38-a5ba-c3624b8ea09f",
+  "BootNotification",
+  {
+    "chargeBoxSerialNumber": "cp001",
+    "chargePointModel": "Yeti",
+    "chargePointVendor": "Pionix",
+    "firmwareVersion": "0.1"
+  }
+]
+
+2023-12-07T04:03:32.467Z: CentralSystem>ChargePoint  BootNotificationResponse
+[
+  3,
+  "7e348825-d154-4b38-a5ba-c3624b8ea09f",
+  {
+    "currentTime": "2023-12-07T04:03:32.459Z",
+    "interval": 14400,
+    "status": "Accepted"
+  }
+]
+
+2023-12-07T04:03:32.467Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "c44da50b-0a2e-4ff7-9bea-2a93f1024d05",
+  "StatusNotification",
+  {
+    "connectorId": 0,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-12-07T04:03:32.476Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "c44da50b-0a2e-4ff7-9bea-2a93f1024d05",
+  {}
+]
+
+2023-12-07T04:03:32.476Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "a40801eb-2e2b-41d8-902d-7cf6bde240c7",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-12-07T04:03:32.503Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "a40801eb-2e2b-41d8-902d-7cf6bde240c7",
+  {}
+]
+
+2023-12-07T04:03:32.503Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "bdce1b13-1bea-4c72-9195-b5d8790a4c91",
+  "StatusNotification",
+  {
+    "connectorId": 2,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-12-07T04:03:32.512Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "bdce1b13-1bea-4c72-9195-b5d8790a4c91",
+  {}
+]
+
+2023-12-07T04:03:45.143Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "6345f38f-e7dc-4312-a294-eae504f02953",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Preparing"
+  }
+]
+
+2023-12-07T04:03:45.160Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "6345f38f-e7dc-4312-a294-eae504f02953",
+  {}
+]
+
+2023-12-07T04:03:47.144Z: ChargePoint>CentralSystem Authorize 
+[
+  2,
+  "07353fa6-5f51-47e0-92fe-88bc18b0555c",
+  "Authorize",
+  {
+    "idTag": "ABC12345"
+  }
+]
+
+2023-12-07T04:03:47.153Z: CentralSystem>ChargePoint  AuthorizeResponse
+[
+  3,
+  "07353fa6-5f51-47e0-92fe-88bc18b0555c",
+  {
+    "idTagInfo": {
+      "expiryDate": "2023-12-07T05:03:47.151Z",
+      "status": "Accepted"
+    }
+  }
+]
+
+2023-12-07T04:03:47.362Z: ChargePoint>CentralSystem StartTransaction 
+[
+  2,
+  "28ea58ff-441c-4e8a-8096-1a8f9ed7a145",
+  "StartTransaction",
+  {
+    "connectorId": 1,
+    "idTag": "ABC12345",
+    "meterStart": 0,
+    "timestamp": "2023-12-07T04:03:47.302Z"
+  }
+]
+
+2023-12-07T04:03:47.399Z: CentralSystem>ChargePoint  StartTransactionResponse
+[
+  3,
+  "28ea58ff-441c-4e8a-8096-1a8f9ed7a145",
+  {
+    "idTagInfo": {
+      "expiryDate": "2023-12-07T05:03:47.367Z",
+      "status": "Accepted"
+    },
+    "transactionId": 10
+  }
+]
+
+2023-12-07T04:03:49.427Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "465ca390-cf6f-4f91-9a93-fc656ad0f1ac",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Charging"
+  }
+]
+
+2023-12-07T04:03:49.446Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "465ca390-cf6f-4f91-9a93-fc656ad0f1ac",
+  {}
+]
+
+2023-12-07T04:03:51.964Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "0539b9fb-85dc-419c-ac7a-5d07fbc8804f",
+  "StatusNotification",
+  {
+    "connectorId": 2,
+    "errorCode": "NoError",
+    "status": "Preparing"
+  }
+]
+
+2023-12-07T04:03:51.976Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "0539b9fb-85dc-419c-ac7a-5d07fbc8804f",
+  {}
+]
+
+2023-12-07T04:03:54.895Z: ChargePoint>CentralSystem Authorize 
+[
+  2,
+  "f8369101-f4ee-4187-8210-e47f6617fb76",
+  "Authorize",
+  {
+    "idTag": "DEADBEEF"
+  }
+]
+
+2023-12-07T04:03:54.902Z: CentralSystem>ChargePoint  AuthorizeResponse
+[
+  3,
+  "f8369101-f4ee-4187-8210-e47f6617fb76",
+  {
+    "idTagInfo": {
+      "expiryDate": "2023-12-07T05:03:54.901Z",
+      "status": "Accepted"
+    }
+  }
+]
+
+2023-12-07T04:03:55.137Z: ChargePoint>CentralSystem StartTransaction 
+[
+  2,
+  "a383c0a2-6ac9-4666-a6de-478c5fc04ba5",
+  "StartTransaction",
+  {
+    "connectorId": 2,
+    "idTag": "DEADBEEF",
+    "meterStart": 0,
+    "timestamp": "2023-12-07T04:03:55.074Z"
+  }
+]
+
+2023-12-07T04:03:55.193Z: CentralSystem>ChargePoint  StartTransactionResponse
+[
+  3,
+  "a383c0a2-6ac9-4666-a6de-478c5fc04ba5",
+  {
+    "idTagInfo": {
+      "expiryDate": "2023-12-07T05:03:55.142Z",
+      "status": "Accepted"
+    },
+    "transactionId": 11
+  }
+]
+
+2023-12-07T04:03:57.209Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "2e435856-8a90-474f-ad5a-815ec4cdcba5",
+  "StatusNotification",
+  {
+    "connectorId": 2,
+    "errorCode": "NoError",
+    "status": "Charging"
+  }
+]
+
+2023-12-07T04:03:57.221Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "2e435856-8a90-474f-ad5a-815ec4cdcba5",
+  {}
+]
+
+2023-12-07T04:04:39.252Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "247e729c-6e7b-4b30-be53-b8c82c4f9052",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "SuspendedEV"
+  }
+]
+
+2023-12-07T04:04:39.274Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "247e729c-6e7b-4b30-be53-b8c82c4f9052",
+  {}
+]
+
+2023-12-07T04:04:39.617Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "69cdddb5-5ebb-45d1-aa69-0160e55ba001",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Finishing"
+  }
+]
+
+2023-12-07T04:04:39.629Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "69cdddb5-5ebb-45d1-aa69-0160e55ba001",
+  {}
+]
+
+2023-12-07T04:04:39.797Z: ChargePoint>CentralSystem StopTransaction 
+[
+  2,
+  "33d09192-f722-4bb7-bcc0-23907fe11028",
+  "StopTransaction",
+  {
+    "meterStop": 53,
+    "reason": "EVDisconnected",
+    "timestamp": "2023-12-07T04:04:39.560Z",
+    "transactionId": 10
+  }
+]
+
+2023-12-07T04:04:39.818Z: CentralSystem>ChargePoint  StopTransactionResponse
+[
+  3,
+  "33d09192-f722-4bb7-bcc0-23907fe11028",
+  {}
+]
+
+2023-12-07T04:04:39.818Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "22f9dd4f-0c29-4438-bffe-72fbe84d3674",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-12-07T04:04:39.843Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "22f9dd4f-0c29-4438-bffe-72fbe84d3674",
+  {}
+]
+
+2023-12-07T04:04:42.719Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "7b681215-1098-4233-8c22-e2c5b5be918e",
+  "StatusNotification",
+  {
+    "connectorId": 2,
+    "errorCode": "NoError",
+    "status": "SuspendedEV"
+  }
+]
+
+2023-12-07T04:04:42.730Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "7b681215-1098-4233-8c22-e2c5b5be918e",
+  {}
+]
+
+2023-12-07T04:04:43.115Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "de07613b-51f1-400c-80f9-53f88603bb6b",
+  "StatusNotification",
+  {
+    "connectorId": 2,
+    "errorCode": "NoError",
+    "status": "Finishing"
+  }
+]
+
+2023-12-07T04:04:43.125Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "de07613b-51f1-400c-80f9-53f88603bb6b",
+  {}
+]
+
+2023-12-07T04:04:43.313Z: ChargePoint>CentralSystem StopTransaction 
+[
+  2,
+  "50fe6bf7-1d7e-4daa-a56e-dc65443fd797",
+  "StopTransaction",
+  {
+    "meterStop": 0,
+    "reason": "EVDisconnected",
+    "timestamp": "2023-12-07T04:04:43.054Z",
+    "transactionId": 11
+  }
+]
+
+2023-12-07T04:04:43.335Z: CentralSystem>ChargePoint  StopTransactionResponse
+[
+  3,
+  "50fe6bf7-1d7e-4daa-a56e-dc65443fd797",
+  {}
+]
+
+2023-12-07T04:04:43.335Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "9c9f162b-e8e8-41e9-85d5-b7a781dfabb9",
+  "StatusNotification",
+  {
+    "connectorId": 2,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-12-07T04:04:43.381Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "9c9f162b-e8e8-41e9-85d5-b7a781dfabb9",
+  {}
+]
+
+
+~~~
+
+
 Now you have an End to End EV charging solution with only Open Source ! Congratulations
 
 
