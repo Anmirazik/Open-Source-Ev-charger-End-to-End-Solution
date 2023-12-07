@@ -147,6 +147,10 @@ After the sessions is authorized, the charging session should start as below
 
 ![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/d5a56567-c521-46dd-964e-3b378b512dcb)
 
+## Charger Logs
+
+### Charger Transaction Logs
+
 Below shows the charger transaction logs 
 ~~~
 2023-12-07 12:03:28.485970 [INFO] manager          ::   ________      __                _
@@ -313,7 +317,7 @@ Below shows the charger transaction logs
 2023-12-07 12:04:43.055405 [INFO] evse_manager_2:  :: SYS  Session logging stopped.
 2023-12-07 12:04:43.114566 [INFO] ocpp:OCPP        :: Executing unlock connector callback
 ~~~
-
+### Charger OCPP Commands Logs
 Below shows the charger OCPP commands logs
 
 ~~~
