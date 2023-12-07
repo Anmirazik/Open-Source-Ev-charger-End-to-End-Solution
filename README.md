@@ -25,9 +25,8 @@ please remember to add the ChargeBox ID same as in the Everest configurations , 
 ![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/8922479e-748f-4db8-8b35-43c81486cda8)
 
 The output should look something like this 
-~~~
-/OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383
-~~~
+![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/9b5f725b-d26c-4764-9ff5-260b81b43448)
+
 ## What you need to configure at Everest 
 First of all SSH into your Linux system, as for me, I use Ubuntu 22.04 and then change the directory into everest-core, As for me once I log in I need to run this 
 ~~~
