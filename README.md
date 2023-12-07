@@ -96,12 +96,12 @@ my "config-docker.json" contents looks like this , btw this is the default confi
 }
 ~~~
 
+Go to config file using this
+
 ~~~
 sudo nano ~/checkout/everest-workspace/everest-core/config/config-sil-ocpp.yaml
 ~~~
-
-and then changed your ChargePointConfigPath
-as for me, I changed my ChargePointConfigPath name is "ocpp.json" but yours might be different , it depends on you what you want to name it 
+and then ensure your ChargePointConfigPath are as below
 ~~~
 ChargePointConfigPath: config-docker.json
 ~~~
