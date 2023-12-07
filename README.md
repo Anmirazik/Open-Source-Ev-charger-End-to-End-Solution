@@ -18,8 +18,6 @@ steve looks like this the first time you access the browser
 
 you need to create a charge point bly click on the number of charge point - add new
 
-and it should pop up like this 
-
 please remember to add the ChargeBox ID same as in the Everest configurations , here the default ChargeBox ID is cp001
 
 ![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/8922479e-748f-4db8-8b35-43c81486cda8)
