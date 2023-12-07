@@ -31,19 +31,19 @@ The output should look something like this
 ## What you need to configure at Everest 
 First of all SSH into your Linux system, as for me, I use Ubuntu 22.04 and then change the directory into everest-core, As for me once I log in I need to run this 
 ~~~
-sudo nano ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP/ocpp.json
+sudo nano ~/checkout/everest-workspace/everest-core/build/dist/share/everest/modules/OCPP/config-docker.json
 ~~~
-my "ocpp.json" contents looks like this 
+my "config-docker.json" contents looks like this 
 ~~~
 {
     "Internal": {
-        "ChargePointId": "Everest-AC-Charger",
-        "CentralSystemURI": "localhost:8001/OCPP16/63c937b82b1ed7174101f323/6569e25a32a12adfd538d383/Everest-AC-Charger",
-        "ChargeBoxSerialNumber": "Everest-AC-Charger",
+        "ChargePointId": "cp001",
+        "CentralSystemURI": "127.0.0.1:8180/steve/websocket/CentralSystemService/cp001",
+        "ChargeBoxSerialNumber": "cp001",
         "ChargePointModel": "Yeti",
         "ChargePointVendor": "Pionix",
         "FirmwareVersion": "0.1",
-        "AllowChargingProfileWithoutStartSchedule": false
+        "AllowChargingProfileWithoutStartSchedule": true
     },
     "Core": {
         "AuthorizeRemoteTxRequests": false,
@@ -55,8 +55,8 @@ my "ocpp.json" contents looks like this
         "LocalAuthorizeOffline": false,
         "LocalPreAuthorize": false,
         "MeterValuesAlignedData": "Energy.Active.Import.Register",
-        "MeterValuesSampledData": "Current.Import,Energy.Active.Import.Register,Energy.Active.Import.Interval,Power.Active.Import,SoC,Energy.Active.Import.Interval,Voltage,Energy.Active.Export.Register,Energy.Reactive.Export.Register,Power.Active.Export",
-        "MeterValueSampleInterval": 10,
+        "MeterValuesSampledData": "Energy.Active.Import.Register",
+        "MeterValueSampleInterval": 60,
         "NumberOfConnectors": 1,
         "ResetRetries": 1,
         "StopTransactionOnEVSideDisconnect": true,
@@ -73,9 +73,8 @@ my "ocpp.json" contents looks like this
         "SupportedFileTransferProtocols": "FTP"
     },
     "Security": {
-        "CpoName": "Pionix",
-        "AuthorizationKey": "AABBCCDDEEFFGGHH",
-        "SecurityProfile": 1
+        "SecurityProfile": 0,
+        "CpoName": "Pionix"
     },
     "LocalAuthListManagement": {
         "LocalAuthListEnabled": true,
