@@ -119,35 +119,31 @@ sh run-sil-ocpp.sh
 ~~~
 
 ## What will happen after you run Everest
-Charger should pop up on your dashboard like this 
+Connector Charger should pop up on "Number Of Connected JSON Charge Point"
 
-<img width="1275" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/fe457ce6-4282-4e72-b2dc-379bbbd8421c">
+![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/782a528e-0b62-4f42-8699-35c4753b4964)
 
-You need to configure your charger , mine looks like this 
+You can execeute OCPP commands by going to Operations - OCPP V1.6
 
-<img width="725" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/8115ffe1-79f9-4160-9de2-5d95064ad301">
+![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/28e078af-ce73-44fe-b9b0-582f87bb203f)
+
 
 This is My Node-Red dashboard for the Everest SIL
 
 <img width="613" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/6b5b8abe-704a-4db5-9f33-be259df30d71">
 
-and then plug in the charger and then you will see on Open E-Mobility dashboard shows preparing status in yellow color like this 
-
-<img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/f3c83cd4-fb5e-4f3d-a924-4933e7fb9839">
-
-You need to add the RFID tags in the Open E-Mobility
+You need to add the RFID tags in the steve server
 
 <img width="211" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/35f1c1e3-c6aa-4192-89b8-b50afe57c17b">
 
 like this 
 
-<img width="1280" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/30640572-a12e-4650-bb1b-44a72bf8d2f8">
+![image](https://github.com/Anmirazik/Open-Source-Ev-charger-End-to-End-Solution/assets/113960675/25effaf8-74cc-4655-b077-55e3fe2c31ac)
 
-If you don't add the RFID tags on Open E-Mobility then the RFID tags will be rejected by the charger, this is because we don't want unregistered RFID tags to authorized for any sessions :)
+
+If you don't add the RFID tags on steve then the RFID tags will be rejected by the charger, this is because we don't want unregistered RFID tags to authorized for any sessions :)
 
 After the sessions is authorized, the charging session should start and you will see the data displayed like this 
-
-<img width="1279" alt="image" src="https://github.com/Anmirazik/EV-Charger-Solution/assets/113960675/2bd82f16-1167-4a87-ba70-5f53fe45c5ea">
 
 Now you have an End to End EV charging solution with only Open Source ! Congratulations
 
